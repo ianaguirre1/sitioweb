@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Contáctanos</h1>
+    </header>
+    <form action="action" method="post">
+        <fieldset>
+            <legend>Información Personal</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej: Ian Aguirre" required>
+                <small>Por favor, ingrese su nombre completo </small>
+            </div>
+            <div>
+                <label for="nombre">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Ejemplo@dominio.com" required>
+                <small>Utilice un formato de correo electrónico válido. Ej: <abbr title="ejemplo@dominio.com">email@ejemplo.com</abbr></small>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Detalles del Mensaje</legend>
+            <div>
+                <label for="asunto">Asunto:</label>
+                <input type="text" id="asunto" name="asunto" placeholder="Ej: Consulta sobre un producto" required>
+                <small>Sea conciso. Por ejemplo, "Soporte técnico" o "Propuesta de colaboración".</small>
+            </div>
+
+            <div>
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Escriba su mensaje aquí..." required></textarea>
+                <small>Proporcione tantos detalles como sea posible para ayudarle mejor.</small>
+            </div>
+        </fieldset>
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+</body>
+</html>
